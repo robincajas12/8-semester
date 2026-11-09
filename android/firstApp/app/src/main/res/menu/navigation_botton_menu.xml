@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/f1"
+        android:title="Fragment 1"
+        android:icon="@drawable/m3_split_button_chevron_avd"
+        />
+    <item android:id="@+id/f2"
+        android:title="Fragment 2"
+        android:icon="@drawable/ic_launcher_foreground"
+
+        />
+
+</menu>
