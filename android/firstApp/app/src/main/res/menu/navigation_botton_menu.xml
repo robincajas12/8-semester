@@ -10,5 +10,9 @@
         android:icon="@drawable/ic_launcher_foreground"
 
         />
+    <group >
+        <item android:title="Item" />
+    </group>
+    <item android:title="Item" />
 
 </menu>
