@@ -5,6 +5,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.recyclerview.R
 import com.example.recyclerview.databinding.ActivityMainBinding
+import com.example.recyclerview.ui.fragments.Chat
 import com.example.recyclerview.ui.fragments.Feed
 import com.example.recyclerview.ui.fragments.Profiles
 
@@ -33,6 +34,11 @@ class MainActivity : AppCompatActivity() {
                 R.id.profiles -> {
                     supportFragmentManager.beginTransaction().replace(R.id.fragment_container,
                         Profiles(), null).commit()
+                    true
+                }
+                R.id.chat -> {
+                    supportFragmentManager.beginTransaction().replace(R.id.fragment_container,
+                        Chat(), null).commit()
                     true
                 }
                 else -> false

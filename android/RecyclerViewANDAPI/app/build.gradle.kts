@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+
     namespace = "com.example.recyclerview"
     compileSdk {
         version = release(37)
@@ -45,6 +46,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     implementation(libs.picasso)
     implementation(libs.retrofit)
+    implementation("com.github.LottieFiles:dotlottie-android:0.4.1")
     implementation("com.squareup.retrofit2:converter-gson:3.0.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
 

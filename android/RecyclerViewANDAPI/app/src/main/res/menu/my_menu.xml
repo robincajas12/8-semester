@@ -3,4 +3,5 @@
 
     <item android:title="Home" android:id="@+id/home" />
     <item android:title="Profile" android:id="@+id/profiles"/>
+    <item android:title="Chat" android:id="@+id/chat" />
 </menu>

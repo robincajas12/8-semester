@@ -9,6 +9,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.recyclerview.databinding.FragmentProfilesBinding
 import com.example.recyclerview.ui.adapters.UserAdapter
+import kotlinx.coroutines.async
+import kotlinx.coroutines.launch
 
 class Profiles : Fragment() {
 
@@ -36,6 +38,7 @@ class Profiles : Fragment() {
         binding.myRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.myRecyclerView.adapter = userAdapter
         userAdapter.loadUsers(viewLifecycleOwner.lifecycleScope)
+
     }
 
     override fun onDestroyView() {
